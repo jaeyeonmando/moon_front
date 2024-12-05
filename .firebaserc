@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "moon-react1",
+    "firebase deploy": "moon-react1"
+  },
+  "targets": {},
+  "etags": {}
+}
