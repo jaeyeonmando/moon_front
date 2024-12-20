@@ -2,23 +2,23 @@ import React from 'react';
 import './Header.css';
 import Button from './Button';
 
-const Header = ({ user }) => {
+const Header = ({ user, logout }) => {
   return (
     <header>
       {user ? (
-        <Button 
-          text="Log Out" 
-          onClick={() => localStorage.removeItem('user')} 
+        <Button
+          text="Log Out"
+          onClick={logout}  // logout 함수 호출
         />
       ) : (
         <>
-          <Button 
-            text="Sign Up" 
-            onClick={() => window.location.href = '/signup'} 
+          <Button
+            text="Sign Up"
+            onClick={() => window.location.href = '/signup'}
           />
-          <Button 
-            text="Log In" 
-            onClick={() => window.location.href = '/login'} 
+          <Button
+            text="Log In"
+            onClick={() => window.location.href = '/login'}
           />
         </>
       )}

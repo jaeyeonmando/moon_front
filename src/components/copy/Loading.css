@@ -1,0 +1,19 @@
+.loader {
+  margin: 5% auto;
+  height: 100px; /* $size */
+  width: 100px; /* $size */
+  border: 6px solid #fff; /* $thickness and $base-color */
+  border-right-color: #c30; /* $wheel-color */
+  border-top-color: #c30; /* $wheel-color */
+  border-radius: 100%;
+  animation: spin 800ms infinite linear; /* $speed */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

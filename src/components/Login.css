@@ -1,23 +1,25 @@
 .logo {
   font-size: 60px;
   font-weight: bold;
-  color: #21a1f1;
-  margin-bottom: 30px;
+  color: #0078D6;
+  margin-bottom: 20px;
+  font-family: 'MOONLOGO', sans-serif;
 }
 
 .login-page .logo {
-  font-size: 30px;
+  font-size: 40px;
+  font-family: 'MOONLOGO', sans-serif;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   height: 100vh;
   text-align: center;
   background-color: #282c34;
-  font-family: Arial, sans-serif;
+  font-family: 'MOON', sans-serif;
   padding: 0;
 }
 
@@ -29,44 +31,77 @@ body {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
+  background-color: #333444; /* 부드러운 어두운 배경 */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* 부드러운 그림자 효과 */
 }
 
+/* 제목 스타일 */
 h2 {
   font-size: 24px;
   color: #ffffff;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
+/* 입력창 스타일 */
 input {
-  padding: 10px;
+  padding: 12px;
   margin-top: 10px;
   font-size: 16px;
-  width: 250px;
+  width: 100%;
+  max-width: 300px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  background-color: #f4f4f7;
+  margin-bottom: 5px; /* 입력창 사이 여유 공간 추가 */
+  transition: border 0.3s ease;
 }
 
+input:focus {
+  border-color: #61dafb; /* 입력창 포커스 시 색상 변화 */
+  outline: none;
+}
+
+/* 버튼 스타일 */
 button {
-  background-color: #61dafb;
+  background: linear-gradient(45deg, #61dafb, #21a1f1); /* 그라디언트 배경 */
   border: none;
-  padding: 10px 20px;
+  padding: 12px 20px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
-  margin-top: 10px;
-  width: 250px;
+  transition: background 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 15px;
 }
 
 button:hover {
-  background-color: #21a1f1;
+  background: linear-gradient(45deg, #21a1f1, #61dafb); /* 버튼 hover 시 그라디언트 반전 */
 }
 
 button:focus {
   outline: none;
 }
 
+/* 경고 메시지 스타일 */
 p {
   color: red;
   text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+/* 반응형 디자인 추가 */
+@media (max-width: 500px) {
+  .login-page {
+    padding: 20px;
+  }
+
+  input, button {
+    width: 100%;
+    max-width: 100%;
+  }
 }

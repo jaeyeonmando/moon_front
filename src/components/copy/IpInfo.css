@@ -1,0 +1,50 @@
+.ip-info-page {
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+}
+
+.ip-info-header h3 {
+  color: #ffffff !important;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* IP 표시 텍스트 (보라색으로 변경) */
+.ip-display {
+  color: #5eacff !important;
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.error-message {
+  color: red;
+}
+
+.info-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  color: white;
+}
+
+.info-table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.info-table td:nth-child(1) {
+  font-weight: bold;
+}
+
+.map-container {
+  margin-top: 20px;
+}
+
+/* 로딩 상태 */
+.ip-info-page p {
+  color: white;
+}

@@ -1,40 +1,49 @@
-.ip-info-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100vh;
-  padding-top: 50px;
-  background-color: #282c34;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
+.ip-info-page {
+  color: white;
+  padding: 20px;
 }
 
-.logo-container {
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-.logo {
-  font-size: 60px;
-  font-weight: bold;
-  color: #21a1f1;
-  margin-bottom: 20px;
-}
-
-.ip-info-container.ipinfo-page .logo {
-  font-size: 30px; 
+/* IP 표시 텍스트 (보라색으로 변경) */
+.ip-display {
+  color: #5eacff !important;
+  font-size: 25px;
+  margin-top: 0px;
   margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
 }
 
-h2 {
-  margin-top: 20px;
-  font-size: 24px;
-}
-
-p {
-  margin: 5px 0;
+.error-message {
+  color: red;
+  text-align: center;
   font-size: 16px;
-  line-height: 1.5;
-  color: #ffffff;
+}
+
+.info-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.info-table td {
+  padding: 12px;
+  border-bottom: 1px solid #636363;
+  text-align: left;
+  font-size: 16px;
+  word-wrap: break-word;
+  min-width: 100;
+}
+.info-table td:nth-child(1) {
+  font-weight: bold;
+}
+
+.map-container {
+  margin-top: 20px;
+}
+
+/* 로딩 상태 */
+.ip-info-page p {
+  color: white;
 }

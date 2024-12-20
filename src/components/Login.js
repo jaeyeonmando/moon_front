@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // 페이지 이동을 위한 hook
+import axios from 'axios'; // 
 import './Login.css';
 
 const Login = ({ setUser }) => {
@@ -8,7 +9,7 @@ const Login = ({ setUser }) => {
   const [error, setError] = useState(''); // 오류 메시지 상태
   const navigate = useNavigate(); // 페이지 이동을 위한 hook
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     // 간단한 유효성 검사
@@ -17,18 +18,31 @@ const Login = ({ setUser }) => {
       return;
     }
 
-    // 서버 호출 없이 로컬에서만 처리 (기본적으로 아이디와 비밀번호가 일치한다고 가정)
-    const user = {
-      username,
-      password, // 실제 환경에서는 비밀번호를 직접 다루지 않아야 합니다.
-    };
+    try {
+      console.log({ username, password }); // 보낼 데이터 확인
+      // Django 로그인 API 호출
+      const response = await axios.post('http://182.162.109.228:23488/api/login/', {
+        username,
+        password,
+      });
+
+  // 서버에서 받은 사용자 정보
+  const user = response.data.user;
 
     // 로컬 스토리지에 사용자 정보 저장
     localStorage.setItem('user', JSON.stringify(user));
 
-    // 로그인 성공 시
-    setUser(user); // setUser를 사용하여 사용자 정보 설정
-    navigate('/'); // 로그인 후 메인 페이지로 이동
+      // 로그인 성공 시
+      setUser(user);
+      navigate('/'); // 로그인 후 메인 페이지로 이동
+    } catch (err) {
+      // 오류 메시지 표시
+      if (err.response && err.response.data) {
+        setError(err.response.data.error || '로그인에 실패했습니다.');
+      } else {
+        setError('서버 오류가 발생했습니다. 나중에 다시 시도해주세요.');
+      }
+    }
   };
 
   const handleLogoClick = () => {

@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'MOON';
+  src: url('./assets/fonts/MOON.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MOONLOGO';
+  src: url('./assets/fonts/MOONLOGO.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

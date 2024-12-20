@@ -1,0 +1,61 @@
+body {
+  font-family: 'MOON', sans-serif;
+}
+
+.port-info-status {
+  width: 100%;
+  max-width: 600px;
+}
+
+.port-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.port-info-table th,
+.port-info-table td {
+  border: 1px solid #ddd !important;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.port-info-table th {
+  font-weight: bold;
+}
+
+.port-info-status h5 {
+  margin-top: 10px;
+  margin-bottom: 10px; 
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff; 
+}
+
+
+.port-buttons {
+  display: flex;
+  flex-wrap: wrap; /* 버튼들이 여러 줄로 배치될 수 있도록 설정 */
+  gap: 10px;
+  justify-content: flex-start; /* 왼쪽 정렬 */
+}
+
+.port-button {
+  width: 40px; /* 정사각형 버튼의 가로 크기 */
+  height: 40px; /* 정사각형 버튼의 세로 크기 */
+  background-color: #6c2d2d;
+  color: white;
+  border: none;
+  font-size: 14px; /* 텍스트 크기 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  flex-shrink: 0; /* 크기 축소 방지 */
+}
+
+.port-buttons > .port-button:nth-child(n + 6) {
+  margin-top: 10px; /* 버튼을 5개씩 묶어 주고 다음 줄로 넘길 때 위쪽 마진을 추가 */
+}

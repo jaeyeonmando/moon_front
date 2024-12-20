@@ -1,0 +1,110 @@
+/* 기본 포트 정보 스타일 */
+.port-info-status {
+  width: 100%;
+  max-width: 600px;
+  color: white;
+  padding: 20px;
+  background-color: #333333;
+  
+}
+
+/* 포트 정보 제목 스타일 */
+.port-info-status h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px 20px;
+  background-color: #6c2d2d; /* 제목 배경색 */
+}
+
+/* OpenSSH 버전 스타일 */
+.port-info-status p.openssh-version {
+  font-size: 19px; /* 글자 크기 증가 */
+  font-weight: bold; /* 진하게 */
+  color: rgb(223, 223, 223);
+  background-color: #343434;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 5px;
+  text-align: center;
+}
+
+/* 포트 정보 텍스트 */
+.port-info-status p {
+  font-size: 16px;
+  color: white;
+  text-align: left;
+  margin-bottom: 10px;
+  line-height: 1.4; /* 문장 간격 줄이기 */
+
+}
+
+/* 미디엄, 기본 점수, 영향 점수, 착취성 점수 묶음 */
+.port-severity {
+  padding: 15px;
+  margin-top: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* 그림자 추가 */
+}
+
+
+.port-severity p {
+  font-size: 16px;
+  color: white;
+  margin: 5px 0;
+}
+
+.port-severity p strong {
+  color: #bcbcbc;
+  font-weight: bold; /* 진하게 */
+  display: block;
+  text-align: center; /* 가운데 정렬 */
+  font-size: 18px; /* 글자 크기 증가 */
+}
+
+/* 표 스타일 */
+.port-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: none; /* 바깥 테두리 제거 */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* 그림자 추가 */
+}
+
+.port-info-table th {
+  font-weight: bold;
+  font-size: 17px;
+  text-align: left;
+  padding: 10px;
+}
+
+.port-info-table td {
+  padding: 10px;
+  font-size: 16px;
+  text-align: left;
+  border-top: 1px solid #636363;
+  border-bottom: 1px solid #636363;
+  
+}
+
+/* 가운데 세로선 제거 */
+.port-info-table td:nth-child(2) {
+  border-left: none;
+}
+
+.port-severity h4 {
+  color: #ececec;
+  margin-bottom: 30px;
+  font-size: 19px;
+  margin-top: 0px;
+}
+
+.port-info-status h6 {
+  margin-top: 50px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+}

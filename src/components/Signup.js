@@ -21,10 +21,10 @@ const Signup = () => {
 
     try {
       // 실제 회원가입 API 호출
-      const response = await axios.post('http://localhost:8000/api/signup/', {
+      const response = await axios.post('http://182.162.109.228:23488/api/signup/', {
         username,
-        email,
         password,
+        email,
       });
 
       // 서버에서 받은 사용자 정보

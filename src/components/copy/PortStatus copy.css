@@ -1,0 +1,75 @@
+.port-status {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.port-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.port-card {
+  width: 100%;
+  max-width: 100%; 
+  padding: 0px 20px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  text-align: left; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative; 
+  overflow: hidden; 
+}
+
+.port-card:hover {
+  transform: translateY(0); 
+  box-shadow: none; 
+}
+
+.port-card h4 {
+  margin: 0px 8px; 
+  font-size: 16px; 
+  font-weight: bold;
+  line-height: 0.8; 
+}
+
+.open-status {
+  color: rgb(255, 213, 213);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.closed-status {
+  color: #c3f2ff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.open {
+  background-color: #6c2d2d;
+  border: 1px solid rgb(255, 104, 104);
+}
+
+.closed {
+  background-color: #172b31;
+  border: 1px solid #45c0dc;
+}
+
+/* 오류 메시지 스타일 */
+.error {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #ff5722;
+}
+
+/* 로딩 및 오류 메시지 스타일 */
+.loading,
+.error {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #ff5722;
+}

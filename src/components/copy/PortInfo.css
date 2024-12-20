@@ -1,0 +1,26 @@
+body {
+  font-family: 'MOON', sans-serif;
+}
+
+.port-info-status {
+  width: 100%;
+  max-width: 600px;
+}
+
+.port-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.port-info-table th,
+.port-info-table td {
+  border: 1px solid #ddd !important;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.port-info-table th {
+  font-weight: bold;
+}

@@ -1,0 +1,42 @@
+
+.port-status {
+  width: 100%;
+  max-width: 600px;
+}
+
+.port-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.port-table th,
+.port-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.port-table th {
+  font-weight: bold;
+}
+
+.open {
+  color: rgb(255, 104, 104);
+}
+
+.closed {
+  color: #5fc7e4;
+}
+
+.port-table td.error {
+  color: #ffc926;
+}
+
+/* 로딩 및 오류 메시지 스타일 */
+.loading,
+.error {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #ff5722;
+}
