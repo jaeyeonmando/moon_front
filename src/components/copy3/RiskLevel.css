@@ -1,0 +1,55 @@
+body {
+  font-family: 'MOON', sans-serif;
+}
+
+.risk-level {
+  padding: 20px;
+  border-radius: 8px;
+  background: #2c3e50;
+  color: white;
+}
+
+.gauge-section {
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+
+.port-severity {
+  border-radius: 8px;
+}
+
+.bar-container {
+  margin-top: 0px;
+}
+
+.bar-label {
+  font-size: 16px;
+  margin: 5px 0;
+  
+}
+
+.bar {
+  width: calc(100% - 40px);
+  background-color: #ecf0f1;
+  height: 20px;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+.bar-inner {
+  height: 100%;
+  border-radius: 10px;
+  background-color: #3498db;
+}
+
+
+
+h4 {
+  font-size: 18px;  /* 폰트 크기 18로 설정 */
+  text-align: left;  /* 왼쪽 정렬 */
+  margin: 0;         /* 상하 여백 제거 */
+  color: #ececec;    /* 텍스트 색상 */
+}

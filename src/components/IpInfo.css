@@ -3,15 +3,16 @@
   padding: 20px;
 }
 
-/* IP 표시 텍스트 (보라색으로 변경) */
 .ip-display {
-  color: #5eacff !important;
-  font-size: 25px;
+  background: linear-gradient(90deg, #047ebb, #0b4569); /* 기본 그라디언트 배경 */
+  font-size: 24px;
   margin-top: 0px;
   margin-bottom: 10px;
   font-weight: bold;
   text-align: center;
+  padding: 12px;
 }
+
 
 .error-message {
   color: red;
@@ -26,6 +27,7 @@
   color: white;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-width: 50px; 
 }
 .info-table td {
   padding: 12px;
@@ -37,13 +39,23 @@
 }
 .info-table td:nth-child(1) {
   font-weight: bold;
+  min-width: 80px; 
 }
 
 .map-container {
   margin-top: 20px;
+  z-index: -1;
 }
 
 /* 로딩 상태 */
 .ip-info-page p {
   color: white;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  filter: invert(1); /* 색상 반전 */
+  transform: scale(1.2); /* 크기 확대 */
 }

@@ -1,0 +1,153 @@
+body {
+  font-family: 'MOON', sans-serif;
+}
+
+
+.gauge-section {
+  margin-bottom: 10px;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto; 
+}
+
+.port-severity {
+  border-radius: 8px;
+}
+
+.bar-container {
+  margin-top: 0px;
+}
+
+.bar-label {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.bar {
+  width: calc(100% - 40px);
+  background-color: #ecf0f1;
+  height: 20px;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+.bar-inner {
+  height: 100%;
+  border-radius: 10px;
+  background-color: #3498db;
+}
+
+h4 {
+  font-size: 18px;  /* 폰트 크기 18로 설정 */
+  text-align: left;  /* 왼쪽 정렬 */
+  margin: 0;         /* 상하 여백 제거 */
+  color: #ececec;    /* 텍스트 색상 */
+}
+
+.port-severity h4, .gauge-section h4 {
+  margin-top: 0; /* 상단 마진 제거 */
+}
+
+.vulnerability-score {
+  margin-top: 40px;
+}
+
+.circle-chart {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.circle-progress {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(#3498db 65%, #ecf0f1 0); /* 파란색으로 변경 */
+}
+
+.circle-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ecf0f1; /* 배경 색상 */
+}
+
+
+.circle-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px; /* 텍스트 크기 키움 */
+  font-weight: bold;
+  color: #ffffff;
+  z-index: 1; /* 텍스트가 원 위에 표시되도록 */
+  background-color: #252c31;
+  width: 130px; /* 원형 배경 크기 조정 */
+  height: 130px; /* 원형 배경 크기 조정 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* 배경을 원형으로 설정 */
+}
+
+.severity-info h5 {
+  font-size: 18px; /* 폰트 크기 */
+  margin: 10px 0;
+  padding: 10px; /* 여백 추가 */
+  text-align: center;
+  color: #fff; /* 텍스트 색상 */
+  background-color: #263954; 
+  margin-bottom: 20px;
+}
+
+/* 심각도에 맞는 색상 */
+.severity-info .low {
+  background-color: #3498db; /* 파란색 */
+}
+
+.severity-info .medium {
+  background-color: #1abc9c; /* 청록색 */
+}
+
+.severity-info .high {
+  background-color: #2ecc71; /* 녹색 */
+}
+
+.severity-info .critical {
+  background-color: #a2d729; /* 연두색 */
+}
+
+/* 점수가 없을 때 회색 처리 (모든 심각도에 대해 적용) */
+.severity-info .no-score {
+  background-color: #7f8c8d; /* 회색 */
+}
+
+
+/* 점수가 없을 때 회색 표시 */
+.bar-inner.no-score {
+  background-color: #7f8c8d; /* 회색 */
+}
+
+.circle-progress2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(#2980b9 65%, #ecf0f1 0); /* 파란색으로 변경 */
+}
+
+h5 {
+  font-size: 18px; /* 폰트 크기 */
+  margin: 10px 0;
+  padding: 10px; /* 여백 추가 */
+  text-align: center;
+  color: #fff; /* 텍스트 색상 */
+  background-color: #263954; 
+  margin-bottom: 20px;
+}

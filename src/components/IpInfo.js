@@ -5,6 +5,8 @@ import 'leaflet/dist/leaflet.css';
 import './IpInfo.css';
 
 import L from 'leaflet';
+import searchIcon from './icons/search.png'; // 아이콘 파일 import
+
 const icon = new L.Icon({
   iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',
   iconSize: [25, 41],
@@ -41,7 +43,6 @@ const Map = ({ lat, lon }) => (
 );
 
 const IpInfo = ({ ip }) => {
-  //const { ip } = useParams();
   const [info, setInfo] = useState(null);
   const [error, setError] = useState('');
 
@@ -61,7 +62,10 @@ const IpInfo = ({ ip }) => {
   return (
     <div className="ip-info-page">
       <div className="ip-info-header">
-        <p className="ip-display">입력한 IP: {ip}</p>
+        <p className="ip-display">
+          입력한 IP: {ip}
+          <img src={searchIcon} alt="search icon" className="search-icon" /> {/* import된 아이콘 사용 */}
+        </p>
         <h3>IP 정보</h3>
       </div>
       {error ? (

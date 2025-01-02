@@ -1,110 +1,214 @@
-/* 기본 포트 정보 스타일 */
+/* 포트 정보 컨테이너 스타일 */
 .port-info-status {
+  display: flex;
   width: 100%;
-  max-width: 600px;
+  max-width: 1000px;
   color: white;
   padding: 20px;
   background-color: #333333;
-  
+}
+
+/* 포트 정보 왼쪽 열 */
+.port-info-left {
+  width: 50%; /* 왼쪽 열 너비를 50%로 설정 */
+  padding-right: 20px;
+}
+
+/* 포트 정보 오른쪽 열 */
+.port-info-right {
+  width: 50%; /* 오른쪽 열 너비를 50%로 설정 */
+  padding-left: 20px;
 }
 
 /* 포트 정보 제목 스타일 */
-.port-info-status h5 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.port-info-status h3 {
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 20px;
   color: #ffffff;
-  padding: 10px 20px;
-  background-color: #6c2d2d; /* 제목 배경색 */
 }
 
-/* OpenSSH 버전 스타일 */
-.port-info-status p.openssh-version {
-  font-size: 19px; /* 글자 크기 증가 */
-  font-weight: bold; /* 진하게 */
-  color: rgb(223, 223, 223);
-  background-color: #343434;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  padding: 5px;
-  text-align: center;
+.port-info-status h2 {
+  font-size: 17px;
+  margin-top: 20px;
+  color: #ffffff;
+  text-align: left;
+  padding: 5px 20px;
+  background-color: #263954; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* 포트 정보 텍스트 */
 .port-info-status p {
   font-size: 16px;
-  color: white;
+  margin-top: 10px;
+  color: #ffffff;
   text-align: left;
-  margin-bottom: 10px;
-  line-height: 1.4; /* 문장 간격 줄이기 */
-
+  font-weight: normal;
 }
 
-/* 미디엄, 기본 점수, 영향 점수, 착취성 점수 묶음 */
-.port-severity {
-  padding: 15px;
-  margin-top: 30px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* 그림자 추가 */
+/* 오픈된 포트 목록 제목 스타일 */
+.port-info-card h4 {
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 0;
+  color: #ececec;
 }
 
+.port-info-card h6 {
+  font-size: 14px;
+  text-align: left;
+  color: #ececec;
+  margin-top: 5px;
+}
 
-.port-severity p {
+/* 카드 제목 스타일 */
+.port-info-card h5 {
   font-size: 16px;
+  margin-bottom: 10px;
+  color: #ececec;
+  background-color: #3498db;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.port-info-card h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ececec;
+  margin-top: 2px;
+}
+
+/* 태그 스타일 (가로로 배치) */
+.port-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+}
+
+/* 정사각형 형태로 바뀐 태그 스타일 */
+.port-tag {
+  padding: 0;
+  background-color: #6c2d2d;
   color: white;
-  margin: 5px 0;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
 }
 
-.port-severity p strong {
-  color: #bcbcbc;
-  font-weight: bold; /* 진하게 */
-  display: block;
-  text-align: center; /* 가운데 정렬 */
-  font-size: 18px; /* 글자 크기 증가 */
+.port-tag:hover {
+  background-color: #ad6262;
+  transform: scale(1.1);
 }
 
-/* 표 스타일 */
+.port-tag.active {
+  background-color: #3498db;
+}
+
+/* 포트 정보 테이블 스타일 */
 .port-info-table {
   width: 100%;
-  border-collapse: collapse;
   margin-top: 20px;
-  border: none; /* 바깥 테두리 제거 */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* 그림자 추가 */
-}
-
-.port-info-table th {
+  border-collapse: collapse;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   font-weight: bold;
-  font-size: 17px;
-  text-align: left;
-  padding: 10px;
 }
 
 .port-info-table td {
-  padding: 10px;
-  font-size: 16px;
-  text-align: left;
-  border-top: 1px solid #636363;
+  padding: 12px;
   border-bottom: 1px solid #636363;
-  
+  text-align: left;
+  font-size: 16px;
+  word-wrap: break-word;
+  min-width: 100;
 }
 
-/* 가운데 세로선 제거 */
-.port-info-table td:nth-child(2) {
-  border-left: none;
-}
 
-.port-severity h4 {
-  color: #ececec;
-  margin-bottom: 30px;
-  font-size: 19px;
-  margin-top: 0px;
-}
 
-.port-info-status h6 {
-  margin-top: 50px;
-  margin-bottom: 5px;
+/* 포트 정보 제목 스타일 */
+.vulnerability-score h3 {
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 20px;
   color: #ffffff;
-  text-align: left;
+  margin-top: -20px;
+}
+
+.vulnerability-score h5 {
+  font-size: 18px !important;
+  margin: 10px 0;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(45deg, #21a1f1, #147cbd); /* 그라디언트 배경 */
+  margin-bottom: 0px;
+  margin-top: -15px;
+}
+
+
+
+/* 취약성 유형 표 스타일 */
+.score-table {
+  width: 100%;  /* 테이블 너비를 80%로 줄임 */
+  margin-top: 20px;
+  border-collapse: collapse;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+/* 표의 각 셀 스타일 */
+.score-table td,
+.score-table th {
+  padding: 12px;
+  border-bottom: 1px solid #636363;
+  text-align: center;
+  font-size: 16px;
+  word-wrap: break-word;
+  min-width: 50px;  /* 최소 너비를 80px로 줄임 */
+}
+
+/* 첫 번째 열 스타일 (취약성 등급) */
+.score-table td:first-child {
+  color: white;
+  font-weight: bold;
+}
+
+/* 두 번째 열 스타일 (점수) */
+.score-table td:last-child {
+  color: white;
+  font-weight: bold;
+}
+
+/* .score-left와 .score-right 스타일 */
+.score-left {
+  width: 50%; /* 왼쪽 열 비율을 50%로 유지 */
+  padding-right: 15px; /* 간격을 조정 */
+}
+
+.score-right {
+  width: 50%; /* 오른쪽 열 비율을 50%로 유지 */
+  padding-left: 15px;
+}
+
+/* 작은 화면에서 테이블 너비를 100%로 조정 */
+@media (max-width: 768px) {
+  .score-table {
+    width: 100%;  /* 작은 화면에서는 테이블을 100% 너비로 설정 */
+  }
+  .score-left, .score-right {
+    width: 100%; /* 작은 화면에서 두 열을 100%로 확장 */
+    padding: 0;
+  }
 }

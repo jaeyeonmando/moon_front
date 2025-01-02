@@ -12,19 +12,39 @@ header {
 }
 
 header .custom-button {
-  background-color: #61dafb;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 5px;
   transition: background-color 0.3s ease;
-}
-
-header .custom-button:hover {
-  background-color: #21a1f1;
 }
 
 header .custom-button:focus {
   outline: none;
+}
+
+header .header-button {
+  background-color: transparent;
+  width: 50px; 
+  height: 50px;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Header.css */
+
+/* 버튼 내 아이콘 크기 확대 */
+button img {
+  transform: scale(1.2);
+  margin-right: 8px; /* 아이콘과 텍스트 사이의 간격 조정 */
+  transition: transform 0.3s ease-in-out; /* 확대 효과에 부드러운 트랜지션 추가 */
+}
+
+button:hover img {
+  transform: scale(1.4); /* 마우스 오버 시 아이콘 확대 */
 }

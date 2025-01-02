@@ -1,0 +1,124 @@
+/* 포트 정보 컨테이너 스타일 */
+.port-info-status {
+  width: 100%;
+  max-width: 600px;
+  color: white;
+  padding: 20px;
+  background-color: #333333;
+}
+
+/* 포트 정보 제목 스타일 */
+.port-info-status h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* 오픈된 포트 목록 제목 스타일 */
+.port-info-card h4 {
+  font-size: 18px;  /* 폰트 크기를 18로 설정 */
+  text-align: left;  /* 왼쪽 정렬 */
+  margin-bottom: 0;
+  color: #ececec;
+}
+
+/* 태그 스타일 (가로로 배치) */
+.port-tags {
+  display: flex; /* flex로 변경하여 가로 배치 */
+  flex-wrap: wrap; /* 태그들이 여러 줄에 걸쳐 배치되도록 설정 */
+  gap: 5px; /* 태그 간격을 5px로 설정 */
+  width: 100%; /* 100% 너비로 설정하여 화면에 꽉 차게 배치 */
+}
+
+/* 정사각형 형태로 바뀐 태그 스타일 */
+.port-tag {
+  padding: 0; /* 패딩을 없애서 크기 조정 */
+  background-color: #6c2d2d;
+  color: white;
+  font-size: 17px; /* 텍스트 크기를 조금 더 작게 설정 */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease; /* 크기 변화를 부드럽게 추가 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50px;  /* 정사각형 너비 */
+  height: 50px; /* 정사각형 높이 */
+  margin-bottom: 5px;
+}
+
+.port-tag:hover {
+  background-color: #ad6262;
+  transform: scale(1.1);
+}
+
+.port-tag.active {
+  background-color: #3498db;
+}
+
+/* 카드 제목 스타일 */
+.port-info-card h5 {
+  font-size: 16px; /* 제목 크기 감소 */
+  margin-bottom: 10px;
+  color: #ececec;
+  background-color: #3498db;
+  padding: 10px;
+  margin-top: 0;
+}
+
+/* 카드 텍스트 스타일 */
+.port-info-card p {
+  font-size: 14px; /* 텍스트 크기 감소 */
+  color: white;
+  margin: 4px 0;
+}
+
+/* 포트 정보 카드 컨테이너 스타일 */
+.port-info-container {
+  display: flex;
+  flex-wrap: wrap; /* 카드들이 한 줄을 넘어서도록 설정 */
+  gap: 20px; /* 카드 간의 간격 설정 */
+  justify-content: center; /* 카드 정렬 설정 */
+}
+
+/* 카드 제목 스타일 */
+.port-info-card h6 {
+  font-size: 15px; /* 제목 크기 감소 */
+  margin-bottom: 8px;
+  color: #ececec;
+  font-weight: lighter;
+  margin-top: 7px;
+  text-align: left;
+}
+
+.port-info-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.port-info-table td {
+  padding: 12px;
+  border-bottom: 1px solid #636363;
+  text-align: left;
+  font-size: 16px;
+  word-wrap: break-word;
+  min-width: 100;
+}
+.port-info-table td:nth-child(1) {
+  text-align: left;
+}
+
+/* 항목 셀 (첫 번째 열) 스타일 */
+.port-info-table th {
+  text-align: left;  /* 제목(항목) 부분 가운데 정렬 */
+}
+
+/* 값 셀 (두 번째 열) 스타일 */
+.port-info-table td {
+  text-align: left;  /* 값 부분 가운데 정렬 */
+}

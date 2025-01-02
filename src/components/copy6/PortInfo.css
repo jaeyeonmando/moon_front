@@ -1,0 +1,112 @@
+/* 포트 정보 컨테이너 스타일 */
+.port-info-status {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  color: white;
+  padding: 20px;
+  background-color: #333333;
+}
+
+/* 포트 정보 왼쪽 열 */
+.port-info-left {
+  width: 50%; /* 왼쪽 열 너비를 50%로 설정 */
+  padding-right: 20px;
+}
+
+/* 포트 정보 오른쪽 열 */
+.port-info-right {
+  width: 50%; /* 오른쪽 열 너비를 50%로 설정 */
+  padding-left: 20px;
+}
+
+/* 포트 정보 제목 스타일 */
+.port-info-status h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.port-info-status h2 {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.port-info-status p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #ffffff;
+  text-align: left;
+}
+
+/* 오픈된 포트 목록 제목 스타일 */
+.port-info-card h4 {
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 0;
+  color: #ececec;
+}
+
+.port-info-card h6 {
+  font-size: 14px;
+  text-align: left;
+  color: #ececec;
+  margin-top: 5px;
+}
+
+/* 태그 스타일 (가로로 배치) */
+.port-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+}
+
+/* 정사각형 형태로 바뀐 태그 스타일 */
+.port-tag {
+  padding: 0;
+  background-color: #6c2d2d;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.port-tag:hover {
+  background-color: #ad6262;
+  transform: scale(1.1);
+}
+
+.port-tag.active {
+  background-color: #3498db;
+}
+
+/* 포트 정보 테이블 스타일 */
+.port-info-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.port-info-table td {
+  padding: 12px;
+  border-bottom: 1px solid #636363;
+  text-align: left;
+  font-size: 16px;
+  word-wrap: break-word;
+  min-width: 100;
+}
